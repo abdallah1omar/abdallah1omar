@@ -1,0 +1,19 @@
+#include <iostream>
+#define ll long long
+using namespace std;
+int main(){
+	ll n;
+	cin>>n;//3
+	while(true){
+		cout<<n<<' ';// 3 10 5 16 8 4 2 
+		if(n%2==0){
+			n/=2;
+		}else{
+			if(n==1){
+		    	break;	
+			}
+			n*=3;
+			n++;//16
+		}
+	}
+}
